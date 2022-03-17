@@ -6,7 +6,7 @@ import time
 import argparse
 
 
-TOKEN = "5218611262:AAHH5oI6l3piLxo87glLebo_hMy6U_-ciqI"
+TOKEN = ""
 bot = telebot.TeleBot(TOKEN)
 
 imgs = []
@@ -109,6 +109,5 @@ if __name__ == "__main__":
     parser.add_argument('--chanal','-c',type=str, help="Имя канала")
     args = parser.parse_args()
     
-    #CHANAL_NAME = "@clothes_try"
     CHANAL_NAME = args.chanal  
     bot.infinity_polling()
